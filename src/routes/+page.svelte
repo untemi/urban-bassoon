@@ -1,7 +1,7 @@
 <script>
   import Icon from "@iconify/svelte";
   import Logo from "$lib/comps/logo.svelte";
-  export let data;
+  // export let data;
 </script>
 
 <div class="grow pt-[64px] container mx-auto px-4">
@@ -28,7 +28,7 @@
             demande.
           </p>
 
-          <a href="/store" class="btn btn-primary w-3xs">
+          <a href="/store" class="btn btn-square btn-info w-3xs">
             <Icon icon="mdi:shopping" class="mr-2" />
             Découvrir nos Produits
           </a>
@@ -54,29 +54,29 @@
   </div>
 
   <!-- Featured Products -->
-  <div class="my-10">
-    <h2 class="text-3xl font-bold text-center mb-8">Produits Vedettes</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {#each data.items as item}
-        <a href={"/store/" + item.id} class="card bg-base-100 shadow-xl">
-          <figure class="h-48 relative overflow-hidden">
-            <img
-              src={item.picurl}
-              alt={item.name}
-              class="w-full h-full object-cover"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title truncate">{item.name}</h2>
-            <div class="flex justify-between items-center mt-2">
-              <span class="text-xl font-bold">{item.price}DH</span>
-              <span class="font-bold">
-                {item.stock > 0 ? `${item.stock} in stock` : "Out of stock"}
-              </span>
-            </div>
-          </div>
-        </a>
-      {/each}
-    </div>
-  </div>
+  <!-- <div class="my-10"> -->
+  <!--   <h2 class="text-3xl font-bold text-center mb-8">Produits Vedettes</h2> -->
+  <!--   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> -->
+  <!--     {#each data.items as item} -->
+  <!--       <a href={"/store/" + item.id} class="card bg-base-100 shadow-xl"> -->
+  <!--         <figure class="h-48 relative overflow-hidden"> -->
+  <!--           <img -->
+  <!--             src={item.picurl} -->
+  <!--             alt={item.name} -->
+  <!--             class="w-full h-full object-cover" -->
+  <!--           /> -->
+  <!--         </figure> -->
+  <!--         <div class="card-body"> -->
+  <!--           <h2 class="card-title truncate">{item.name}</h2> -->
+  <!--           <div class="flex justify-between items-center mt-2"> -->
+  <!--             <span class="text-xl font-bold">{item.price}DH</span> -->
+  <!--             <span class="font-bold"> -->
+  <!--               {item.stock > 0 ? `${item.stock} in stock` : "Out of stock"} -->
+  <!--             </span> -->
+  <!--           </div> -->
+  <!--         </div> -->
+  <!--       </a> -->
+  <!--     {/each} -->
+  <!--   </div> -->
+  <!-- </div> -->
 </div>
