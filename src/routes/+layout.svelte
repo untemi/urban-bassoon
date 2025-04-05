@@ -21,7 +21,7 @@
       </a>
     </div>
     <div class="flex-none">
-      <a href="/store" class="btn btn-square btn-ghost"
+      <a href="/categorys" class="btn btn-square btn-ghost"
         ><Icon width="1.3rem" icon="ic:outline-shopping-cart" /></a
       >
     </div>

@@ -28,7 +28,7 @@
             demande.
           </p>
 
-          <a href="/store" class="btn btn-square btn-info w-3xs">
+          <a href="/categorys" class="btn btn-square btn-info w-3xs">
             <Icon icon="mdi:shopping" class="mr-2" />
             Découvrir nos Produits
           </a>

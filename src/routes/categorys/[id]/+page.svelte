@@ -10,7 +10,7 @@
   >
     {#each data.items as item}
       <a
-        href={"/store/" + item.id}
+        href={"/categorys/" + item.categorys + "/" + item.id}
         class={item.available
           ? `card bg-base-100 shadow-xl`
           : "card bg-base-100 shadow-xl tab-disabled"}
