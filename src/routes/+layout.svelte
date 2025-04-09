@@ -2,12 +2,23 @@
   import "../app.css";
   import Logo from "$lib/comps/logo.svelte";
   import Icon from "@iconify/svelte";
+  import { PUBLIC_WAT_NUM } from "$env/static/public";
   let { children } = $props();
 </script>
 
 <svelte:head>
   <title>Paragas</title>
 </svelte:head>
+
+<div class="toast toast-end p-2 sm:p-5 z-50">
+  <a
+    target="_blank"
+    href={`https://wa.me/${PUBLIC_WAT_NUM}`}
+    class="flex btn btn-circle btn-success btn-xl shadow-xl"
+  >
+    <Icon icon="mdi:whatsapp" />
+  </a>
+</div>
 
 <div class="flex flex-col min-h-screen bg-base-200">
   <div class="fixed z-40 shadow-sm navbar bg-base-300">
